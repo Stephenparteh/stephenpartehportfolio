@@ -7,12 +7,14 @@
     <title>Professor Portfolio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 </head>
 
 <body class="bg-dark">
     <main class="container  text-white">
 
-        <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark position-fixed top-0" style="width: 92%;">
             <a href="#" class="navbar-brand text-light">Professor Portfolio</a>
 
             <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navv" type="button"><span
@@ -24,7 +26,7 @@
                         <a href="#" class="nav-link text-danger">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a href="" class="nav-link text-danger">About</a>
+                        <a href="#aboutMe" class="nav-link text-danger">About Me</a>
                     </li>
                     <li class="nav-item">
                         <a href="" class="nav-link text-danger">Services</a>
@@ -32,9 +34,9 @@
                     <li class="nav-item">
                         <a href="resume.html" class="nav-link text-danger">Resume</a>
                     </li>
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a href="" class="nav-link text-danger">My Works</a>
-                    </li>
+                    </li> -->
                     <li class="nav-item">
                         <a href="" class="nav-link text-danger">Contact</a>
                     </li>
@@ -42,23 +44,82 @@
             </div>
         </nav>
 
-        <div class="container mt-5" style="height: 100vh;">
+        <div class="container mt-5 pt-5" style="height: 100vh;" id="home">
             <div class="row align-items-center">
-                <div class="col-md-7 ">
-                    <p class="text-danger">~I am</p>
-                    <h2 class="lean">Professor Stephen Parteh</h2>
-                    <p class="text-danger">Web Designer</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A pariatur aliquam, velit minus, facere
+                <div class="col-md-6">
+                    <h2 class="text-danger">I am</h2>
+                    <h1 class="lean">Professor Stephen Parteh</h1>
+                    <h2 class="text-danger">Web Designer</h2>
+                    <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A pariatur aliquam, velit minus, facere
                         dicta voluptatem, repellat repudiandae labore incidunt cum. Similique perferendis eligendi saepe
-                        dolores quae quas deserunt neque?</p>
-                    <button class="btn btn-primary">View My Work</button>
+                        dolores quae quas deserunt neque?</p> -->
+                    <a href="#aboutMe"><button class="btn btn-light mt-4 btn-lg">About Me</button></a>
                 </div>
-                <div class="col-md-5">
-                    <img src="tooEasy.jpg" class="img-fluid " style=" width: 100%; height: 60vh; object-fit: cover;"
+                <div class="col-md-6">
+                    <img src="tooEasy.jpg" class="img-fluid " style=" width: 100%; height: 70vh; object-fit: cover;"
                         alt="">
                 </div>
             </div>
         </div>
+
+        <div id="aboutMe">
+            <br><br>
+            <h1 class="text-center mb-4">About Me</h1>
+            <div class="row mb-5">
+                <div class="col-md-7">
+                    <img src="tooEasy.jpg" class="img-fluid" style="width: 100%; object-fit: cover; height: 78vh;"
+                        alt="">
+                </div>
+                <div class="col-md-5">
+                    <h3>Hello World! I am</h3>
+                    <h2>Stephen Monsue Parteh</h2>
+
+                    <p>A front-end web designer with a background in HTML, CSS, Bootstrap, and JavaScript. I am a
+                        student at BlueCrest University, studying Software Engineering, and a participant in the full
+                        stack web development course at the Orange Digital Center. My curiosity to learn has led me to
+                        continuously explore new technologies in web development and other tech-related fields..</p>
+
+                    <p>When I am not coding, you can find me engaging in activities that keep me inspired. I enjoy
+                        exercising, which helps me maintain both physical and mental health. Video editing is another
+                        hobby of mine. Additionally, I often watch inspirational videos that motivate me to strive for
+                        excellence in all aspects of my life.
+                    </p>
+
+                    <a href="resume.html"><button class="btn btn-danger">View My Resume</button></a>
+                </div>
+            </div>
+        </div>
+        <div id="services" class=" text-danger container">
+            <div class="row">
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="card-title">Hiiiiiiii</div>
+                            <div class="card-text">Hiiii</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="card-img"><img src="tooEasy.jpg" class="img-fluid"
+                                    style="height: 200px; width: 100%; object-fit: cover;" alt=""></div>
+                            <div class="card-title">Helllo</div>
+                            <div class="card-text">Helloo </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer id="footer">
+            <div class="container  text-center bg-danger">
+                <!-- <i class="bi bi-laptop">hi</i>
+                <div class="h1 mb-3"><i class="bi bi-person-square"></i></div> -->
+                <br>
+                <p> &copy 2024 Professor Stephen Monsue Parteh | All Rights Reserved</p>
+            </div>
+        </footer>
 
     </main>
 
