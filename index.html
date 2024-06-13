@@ -23,7 +23,8 @@
 <body class="bg-dark">
     <main class="container  text-white">
 
-        <nav class="navbar navbar-expand-lg bg-dark navbar-dark position-fixed top-0" style="width: 92%;">
+
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark position-fixed top-0" style="width: 92%; z-index: 1;">
             <a href="#" class="navbar-brand text-light">Professor Portfolio</a>
 
             <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navv" type="button"><span
@@ -37,15 +38,16 @@
                     <li class="nav-item">
                         <a href="index.html#aboutMe" class="nav-link text-danger">About Me</a>
                     </li>
+                    <li class="nav-item">
+                        <a href="index.html#projects" class="nav-link text-danger">Projects</a>
+                    </li>
                     <!-- <li class="nav-item">
                         <a href="" class="nav-link text-danger">Services</a>
                     </li> -->
                     <li class="nav-item">
                         <a href="resume.html" class="nav-link text-danger">Resume</a>
                     </li>
-                    <!-- <li class="nav-item">
-                        <a href="" class="nav-link text-danger">My Works</a>
-                    </li> -->
+
                     <li class="nav-item">
                         <a href="index.html#contact" class="nav-link text-danger">Contact</a>
                     </li>
@@ -100,30 +102,46 @@
                 </div>
             </div>
         </div>
-        <!-- <div id="services" class=" text-danger container">
-            <div class="row">
-                <div class="col">
+        <section id="projects">
+            <h2 class="text-center my-5">Check out my <span class="text-danger ">Projects</span></h2>
+            <div class="container row text-dark">
+                <div class="col-md">
                     <div class="card">
                         <div class="card-body">
-                            <div class="card-title">Hiiiiiiii</div>
-                            <div class="card-text">Hiiii</div>
+                            <img src="odclab.jpg" class="img-fluid w-100" style="object-fit: cover; height: 50vh;"
+                                alt="">
+                            <h3 class="card-title">SLD & Associates</h3>
+                            <p class="card-text">A website build for a construction company name SLD & Associates to
+                                showcase the
+                                excellence job they have been doing</p>
+
+                            <a href="https://stephenparteh.github.io/SLDandAssociate/" target="_blank"
+                                class="btn btn-danger">View
+                                Project</a>
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col-md">
                     <div class="card">
                         <div class="card-body">
-                            <div class="card-img"><img src="tooEasy.jpg" class="img-fluid"
-                                    style="height: 200px; width: 100%; object-fit: cover;" alt=""></div>
-                            <div class="card-title">Helllo</div>
-                            <div class="card-text">Helloo </div>
+                            <img src="odclab.jpg" class="img-fluid w-100" style="object-fit: cover; height: 50vh;"
+                                alt="">
+                            <h3 class="card-title">NFP Church</h3>
+                            <p class="card-text">A website build for a church name National Freedom Pentecostal Church
+                                to
+                                showcase the
+                                excellence job they have been doing</p>
 
+                            <a href="https://stephenparteh.github.io/FreedomChurch/" target="_blank"
+                                class="btn btn-danger">View
+                                Project</a>
                         </div>
                     </div>
                 </div>
             </div>
-        </div> -->
-        <div id="contact" class="text-center mb-5">
+        </section>
+
+        <!-- <div id="contact" class="text-center mb-5">
             <h1 class="mb-5">Contact Me</h1>
             <i class="bi bi-whatsapp fs-2">0775150941</i>
             <i class="bi bi-send fs-2 d-block">stephenparteh@gmail.com</i>
@@ -137,13 +155,63 @@
 
                 <a class="h1 mb-3 px-5 d-inline text-white" target="_blank"
                     href="https://www.instagram.com/stephen_the_professor/"><i class="bi bi-instagram"></i></a>
-                <!-- <a class="h1 mb-3 px-5 d-inline text-white" target="_blank" href=""><i class="bi bi-whatsapp"></i></a>
-
-                <a class="h1 mb-3 px-5 d-inline text-white" target="_blank" href=""><i class="bi bi-twitter"></i></a> -->
             </div>
-        </div>
+        </div> -->
+
+        <section id="contact">
+
+            <h2 class="text-center my-5"><span class="text-danger">Contact</span> Me</h2>
+            <p class="container text-center">I would love to hear from you! Whether you have a question, need a website,
+                or
+                want to
+                discuss your
+                project,I am here to help. Get in touch with me by using the form below or through my contact details.
+            </p>
+            <div class="row container">
+                <div class="col container text-dark bg-light">
+                    <section class="contact-details">
+                        <h4><i class="bi bi-envelope"> <a href="mailto:stephenparteh@gmail.com"
+                                    class="text-dark">stephenparteh@gmail.com</a> </i>
+                        </h4>
+                        <h4><i class="bi bi-telephone"> <a href="tel:+231886591715" class="text-dark"> 0886-591-715</a>
+                            </i>
+                        </h4>
+                        <h4><i class="bi bi-telephone"> <a href="tel:+231775150941" class="text-dark"> 0775-150-941</a>
+                            </i>
+                        </h4>
+                        <h4><i class="bi bi-geo-alt"> Police Academy Road, Paynesville </i>
+                        </h4>
+                    </section>
+                </div>
+                <div class="col">
+                    <form class="row g-3 container">
+                        <div class="col-md-6">
+                            <label for="inputEmail4" class="form-label">Full name</label>
+                            <input type="text" class="form-control" placeholder="Enter your full name" id="inputEmail4">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="inputPhone" class="form-label">Phone Number</label>
+                            <input type="number" class="form-control" placeholder="Enter your phone number"
+                                id="inputPhone">
+                        </div>
+                        <div class="col-12">
+                            <label for="inputEmail" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="inputEmail" placeholder="xyz@gmail.com">
+                        </div>
+                        <div class="col-12">
+                            <label for="inputMessage" class="form-label">Message</label>
+                            <textarea id="message" class="form-control" name="message" rows="5"
+                                placeholder="Send us a message" required></textarea>
+                        </div>
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-danger">Send me a message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
         <footer id="footer">
-            <div class="container text-center bg-danger">
+            <div class="container text-center bg-danger my-5">
                 <!-- Example icon usage -->
                 <br>
                 <p>&copy; 2024 Professor Stephen Monsue Parteh | All Rights Reserved</p>
