@@ -1,0 +1,19 @@
+#aboutMeHead:hover {
+  color: white;
+  background-color: #dc3545;
+  border: none;
+}
+
+#logo:hover{
+    color: #dc3545;
+    /* background-color: white; */
+}
+
+#navItem01{
+    color: #dc3545;
+
+}
+
+#navItem01:hover{
+    color: white;
+}
