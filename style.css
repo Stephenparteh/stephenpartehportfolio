@@ -4,16 +4,48 @@
   border: none;
 }
 
-#logo:hover{
-    color: #dc3545;
-    /* background-color: white; */
+#logo:hover {
+  color: #dc3545;
+  /* background-color: white; */
 }
 
-#navItem01{
-    color: #dc3545;
-
+#navItem01 {
+  color: #dc3545;
 }
 
-#navItem01:hover{
-    color: white;
+#navItem01:hover {
+  color: white;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-in;
+}
+
+.img-zoom {
+  transition: transform 0.5s ease;
+}
+
+.img-zoom:hover {
+  transform: scale(1.1);
+}
+@keyframes slideIn {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.navbar {
+  animation: slideIn 1s ease-out;
 }

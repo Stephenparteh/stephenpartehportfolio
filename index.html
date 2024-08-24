@@ -39,39 +39,42 @@
 
 <body class="bg-dark">
     <main class="container text-white">
-        <nav class="navbar navbar-expand-lg bg-dark navbar-dark position-fixed top-0" style="width: 92%; z-index: 1;">
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark position-fixed top-0 fade-in"
+            style="width: 92%; z-index: 1;">
             <a href="#" class="navbar-brand " id="logo">Professor Portfolio</a>
             <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navv" type="button">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navv">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a href="#" class="nav-link  px-3 hoverNav" id="navItem01">Home</a></li>
-                    <li class="nav-item"><a href="index.html#aboutMe" class="nav-link  px-3 hoverNav"
+                    <li class="nav-item"><a href="#" class="nav-link  px-3 hoverNav fade-in" id="navItem01">Home</a>
+                    </li>
+                    <li class="nav-item"><a href="index.html#aboutMe" class="nav-link  px-3 hoverNav fade-in"
                             id="navItem01">About
-                            Me</a>
+                            Me</a></li>
+                    <li class="nav-item"><a href="index.html#projects" class="nav-link  px-3 hoverNav fade-in"
+                            id="navItem01">Projects</a></li>
+                    <li class="nav-item"><a href="resume.html" class="nav-link  px-3 hoverNav fade-in"
+                            id="navItem01">Resume</a>
                     </li>
-                    <li class="nav-item"><a href="index.html#projects" class="nav-link  px-3 hoverNav"
-                            id="navItem01">Projects</a>
-                    </li>
-                    <li class="nav-item"><a href="resume.html" class="nav-link  px-3 hoverNav" id="navItem01">Resume</a>
-                    </li>
-                    <li class="nav-item"><a href="index.html#contact" class="nav-link  px-3 hoverNav"
+                    <li class="nav-item"><a href="index.html#contact" class="nav-link  px-3 hoverNav fade-in"
                             id="navItem01">Contact</a></li>
                 </ul>
             </div>
         </nav>
+
         <div class="container mt-5 pt-5" style="height: 100vh;" id="home">
             <div class="row align-items-center">
                 <div class="col-md-6">
-                    <h2 class="text-danger">I am</h2>
-                    <h1 class="lean">Professor Stephen Parteh</h1>
-                    <h2 class="text-danger">Web Designer</h2>
-                    <a href="#aboutMe"><button class="btn btn-light mt-4 btn-lg" id="aboutMeHead">About Me</button></a>
+                    <h2 class="text-danger fade-in">I am</h2>
+                    <h1 class="lean fade-in">Professor Stephen Parteh</h1>
+                    <h2 class="text-danger fade-in">Web Designer</h2>
+                    <a href="#aboutMe"><button class="btn btn-light mt-4 btn-lg fade-in" id="aboutMeHead">About
+                            Me</button></a>
                 </div>
                 <div class="col-md-6">
-                    <img src="tooEasy.jpg" class="img-fluid" style="width: 100%; height: 70vh; object-fit: cover;"
-                        alt="Web design project example">
+                    <img src="tooEasy.jpg" class="img-fluid img-zoom"
+                        style="width: 100%; height: 70vh; object-fit: cover;" alt="Web design project example">
                 </div>
             </div>
         </div>
